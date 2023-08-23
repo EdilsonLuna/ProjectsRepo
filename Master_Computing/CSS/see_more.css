@@ -1,0 +1,88 @@
+.main-body-seemore{
+    margin: 100px;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 70% 30%;
+    background-color: #ffff;
+    padding: 30px;
+    border-radius: 5px;
+    color: black;
+}
+
+.info-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info-price{
+    grid-row: 1/4;
+    grid-column-start: 2;
+    border: 1px solid rgba(128, 128, 128, 0.389);
+    padding: 15px;
+    border-radius: 5px;
+}
+.info-desc{
+    padding: 10px;
+    color: rgb(97, 97, 97);
+}
+
+.img-seemore{
+    max-width: 100%;
+    max-height: 470px;
+    border-radius: 10px;
+}
+.product_title{
+    font-weight: 600;
+}
+
+.btn{
+    font-weight: 900;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    margin: 10px;
+}
+.buy{
+    color: #ffff;
+    background-color: rgb(3, 198, 143);
+}
+.addcar{
+    color: rgb(3, 198, 143);
+    background-color: rgba(3, 198, 143, 0.168);
+}
+
+.buy:hover{
+    transition: .5s;
+    color: #ffff;
+    background-color: rgb(2, 141, 101);
+}
+.addcar:hover{
+    transition: .5s;
+    color: rgb(3, 198, 143);
+    background-color: rgba(1, 117, 84, 0.168);
+}
+
+@media(max-width: 930px){
+    .main-body-seemore{
+        margin: 5%;
+        grid-template-columns: 100%;
+        padding: 10px;
+    }
+    .info-price{
+        grid-column-start: 1;
+        grid-row-start: 4;
+    }
+}
+
+@media(max-width: 450px){
+    .info-image{
+        width: inherit;
+    }
+    .img-seemore{
+        width: 99%;
+    }
+}

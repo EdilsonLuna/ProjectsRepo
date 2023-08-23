@@ -1,0 +1,61 @@
+.body-content{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.products-container{
+    width: 100%;
+}
+
+.product-info-container{
+    padding: 10px;
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.table-myproducts{
+    border-collapse: separate;
+    border-spacing: 10px;
+    border-collapse: separate;
+}
+.table-myproducts td{
+    padding: 10px;
+}
+
+.table-tr{
+    background-color: #ffff;
+    border: 1px solid rgb(94, 94, 94);
+    box-shadow: inset 0px 0px 8px rgb(155, 155, 155);
+}
+
+.product-info-container >p{
+    width: 200px;
+}
+
+.options >a{
+    color: rgb(1, 134, 96);
+}
+
+.options >a:hover{
+    color: rgb(3, 198, 143);
+}
+
+@media(max-width:490px){
+    .products-container{
+        margin: 20%;
+    }
+    .product-info-container{
+        flex-direction: column;
+    }
+    .product-info-container>div{
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}

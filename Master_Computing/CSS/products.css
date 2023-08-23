@@ -1,0 +1,36 @@
+.form-container{
+
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-form-products{
+    padding: 30px 30px;
+    margin: 20px 0px;
+    width: 600px;
+    border: 1px solid rgba(189, 186, 186, 0.341);
+    border-radius: 10px;
+}
+
+.submit{
+    width: 160px;
+    border: none;
+    outline: none;
+    padding: 9px 25px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 4px;
+}
+.submit:active{
+    opacity: .8;
+}
+
+@media(max-width:600px){
+    .main-form-products{
+        width: 90%;
+    }
+}
