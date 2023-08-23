@@ -3,8 +3,6 @@ session_start();
 $con = mysqli_connect('localhost','root','','mc_database');
 if(!$con){
     $_SESSION['warning_message'] ="Ha ocurrido un error en la conexión a la base de datos";
-    //borrar este echo cuando ya esté completado todo
-    echo 'no hay conexión';
 }else{
     if(isset($_SESSION['user_id'])){
         $id = $_GET['id'];
