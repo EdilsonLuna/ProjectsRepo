@@ -1,0 +1,134 @@
+body{
+    background-color: #1f1f1f;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.main-nav{
+    width: 100%;
+    display: inline-flex;
+    justify-content:center;
+    box-shadow: 0px 0px 18px blueviolet;
+    margin-bottom: 20px;
+}
+
+.main-logo{
+    position:absolute;
+    left: 0;
+    width: 180px;
+    height: 50px;
+}
+
+.main-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    position: relative;
+    width: 380px;
+    height: 460px;
+    background-color: rgb(21, 21, 21);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.box::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    z-index: 1;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg,transparent,transparent,#45f3ff,#5eff45,#5eff45);
+    animation: animate 6s linear infinite;
+}
+@keyframes animate{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+.box form{
+    background-color:rgb(29, 29, 29) ;
+    position: absolute;
+    inset: 4px;
+    padding: 10px 40px;
+    border-radius: 8px;
+    z-index: 2;
+}
+
+.box form .inputBox{
+    margin:10px 0px;
+}
+
+.first>input{
+    margin-top: 90px;
+}
+
+.box>form>.inputBox>input{
+    border: none;
+    color: white;
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background:transparent;
+    outline: none;
+    box-shadow: none;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+.box form .inputBox input:hover{
+    transition: 0.5s;
+    background-color: white;
+    color: black;
+}
+
+.box form button{
+    width: 160px;
+    border: none;
+    outline: none;
+    padding: 9px 25px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 4px;
+}
+.box form button:active{
+    opacity: .8;
+}
+
+.login{
+    color: rgba(204, 203, 203, 0.719);
+    text-decoration: none;
+}
+
+.login:hover{
+    color: #5eff45;
+    text-decoration: underline;
+}
+
+.login:active{
+    opacity: .8;
+}
+
+@media(max-width:570px){
+    .main-logo{
+        position:static;
+
+    }
+    .main-nav{
+        padding-top: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+}
+@media(max-width:380px){
+    .box{
+        width: 95%;
+    }
+}
