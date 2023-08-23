@@ -1,1 +1,3 @@
-xd
+Éste proyecto se realizó usando el software XAMPP para poder hacer uso de la base de datos MySQL y phpMyAdmin en el localhost. Por ello, se recomienda que se use el mismo para poder verlo de una correcta forma. El diseño de la base de datos se subirá en formato zip dentro de la misma carpeta Master_Computing, pero se recomienda extraerla, descomprimirla y guardarla en la carpeta mysql/data que se encuentra en los archivos de XAMPP, con los demás archivos y directorios basta con copiarlos y pegarlos en la carpeta htdocs de los archivos de XAMPP.
+
+Como último, el proyecto se ha subido completo a un hosting gratuito (000webhost), con el cuál ya se puede apreciar el proyecto en total funcionamiento. Su link de ingreso es el siguiente: https://mastercomputing.000webhostapp.com
