@@ -1,0 +1,1 @@
+Ésta carpeta se creó para alojar todos los archivos de imagen que se van subiendo a la plataforma, por esa razón se encuentra vacía, conforme la plataforma vaya guardando productos con sus imágenes, se irán guardando aquí.
