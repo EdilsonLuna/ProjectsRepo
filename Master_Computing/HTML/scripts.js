@@ -1,0 +1,1 @@
+ScrollReveal({reset: true}).reveal('.headline'),{delay: 1000};
