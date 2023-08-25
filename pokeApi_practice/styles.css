@@ -1,0 +1,41 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background-image: url(./img/pokeDoodle.png);
+    background-repeat: repeat;
+}
+
+nav{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-group>span:hover{
+    cursor: pointer;
+}
+
+.button{
+    border: none;
+}
+
+.lista{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+.card{
+    margin-top: 10px;
+}
+
+
+
+
+
